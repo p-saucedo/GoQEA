@@ -20,7 +20,7 @@ constraints or the complexity of the cost function. The library has the followin
 * Capcity to implement integral-only variables :x:
 
 ### Basic Usage: 
-PyQEA provides a high level implementation of  the proposed Quantum Inspired algorithm that allows a fast implementation and usage.
+GoQEA provides a high level implementation of  the proposed Quantum Inspired algorithm that allows a fast implementation and usage.
 It aims to be user-friendly despite the non-trivial nature of its hyper-parameters. We now show the optimization process of a paraboloid (Sphere function)
 of input dimension `n` centered in the vector: `[3.8, 3.8, 3.8, 3.8, ...]`. 
 
