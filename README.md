@@ -37,7 +37,7 @@ import (
 
 func main() {
 	// Use case parameters
-	const n_dims int = 1000
+	const n_dims int = 10
 	var upper_bounds [n_dims]float64
 	var lower_bounds [n_dims]float64
 
@@ -46,10 +46,10 @@ func main() {
 		lower_bounds[i] = -5
 	}
 
-	var mu_scaler float64 = 10
+	var mu_scaler float64 = 20
 	var sigma_scaler float64 = 1.003
 	var elitist_level int = 6
-	var n_iterations int = 1000
+	var n_iterations int = 4000
 	var n_samples int = 200
 	// ------------------------------
 
