@@ -13,7 +13,7 @@ genetic algorithms or PSO yield sub-optimal results. The current implementation 
 the algorithm allows for a fast deployment of any optimization problem, regardless of the non-linearity of its 
 constraints or the complexity of the cost function. The library has the following features:
 
-## Features developed in GoQEA with respecto to PyQEA
+## Features developed in GoQEA with respect to PyQEA
 * High level module for Quantum Inspired optimization :heavy_check_mark:
 * Built-in set of objective cost functions to test the optimization algorithm :heavy_check_mark:
 * Capacity to implement non-linear restrictions :x:
