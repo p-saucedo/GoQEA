@@ -124,7 +124,7 @@ func (qea *QuantumEvAlgorithm) ElitistSampleEvaluation(samples *mat.Dense) *mat.
 	indexed_vector := make([]IndexedValue, vect_len)
 
 	for i := 0; i < vect_len; i++ {
-		indexed_vector[i] = IndexedValue{i, cost.AtVec(i)}
+		indexed_vector[i] = IndexedValue{cost.AtVec(i), i}
 	}
 
 	sort.SliceStable(indexed_vector, func(i, j int) bool { return indexed_vector[i].value < indexed_vector[j].value })
