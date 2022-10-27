@@ -36,7 +36,6 @@ func F_single(x *mat.VecDense) float64 {
 	aux_vector := mat.VecDenseCopyOf(x)
 	aux_vector.SubVec(x, min_values)
 	aux_vector.MulElemVec(aux_vector, aux_vector)
-	result := mat.Sum(aux_vector)
 
-	return result
+	return mat.Sum(aux_vector)
 }
