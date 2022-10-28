@@ -81,3 +81,12 @@ The recommended rule of thumb is the following:
 
 The key concept to bear in mind is that, as the dimensionality of the problem increases, it is necessary to make the algorithm more "cautious", therefore minimizing the difference between before and after distributions. In practical terms, as the complexity of a given
 problem increases, sigma_scaler must tend to ~1.
+
+### Performance comparative among Golang and Python implementations
+The Golang version has been implemented using pure Go with some features of Gonum library. Both versions have been compared using 8 different experiments, increasing the number of dimensions of the problem, that is the most influential parameter for the algorithm´s performance. You can check the detailed results in the ``Benchmark.xlsx`` file.
+
+The following image shows the mean time consumed for 5 executions of each experiment in both languages:
+![1](https://github.com/p-saucedo/GoQEA/blob/main/imgs/benchmark.PNG)
+
+Go outperforms Python in all of them, from being x7.35 faster with a reduced number of dimension to reach an stabilization of x1.4 with a higher number. This results are shown in the following image:
+![2](https://github.com/p-saucedo/GoQEA/blob/main/imgs/pythonvsgo.PNG)
