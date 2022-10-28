@@ -56,9 +56,10 @@ func main() {
 	qea := goqea.NewQuantumEvAlgorithm(n_dims, sigma_scaler, mu_scaler, elitist_level, upper_bounds[:], lower_bounds[:], goqea.F)
 
 	start := time.Now()
-	qea.Training(n_iterations, n_samples)
+	solution := qea.Training(n_iterations, n_samples)
 	elapsed := time.Since(start)
 	log.Printf("Took %s\n", elapsed)
+	log.Printf("Solution found: %v", solution)
 
 }
 
