@@ -191,7 +191,7 @@ func (qea *QuantumEvAlgorithm) QuantumUpdate(indiv *Individual, best_performing_
 
 }
 
-func (qea *QuantumEvAlgorithm) Training(n_iterations int, sample_size int) {
+func (qea *QuantumEvAlgorithm) Training(n_iterations int, sample_size int) []float64 {
 
 	if qea.elitist_level > sample_size {
 		panic("Sample size must be greater than elitist level")
@@ -217,5 +217,7 @@ func (qea *QuantumEvAlgorithm) Training(n_iterations int, sample_size int) {
 			log.Printf("Epoch %d: %.6f\n", i, F_single(best_performer))
 		}
 	}
+
+	return qea.best_of_best.RawVector().Data
 
 }
